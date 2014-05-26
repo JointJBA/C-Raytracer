@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9AE52C30-2D14-40A9-BF49-ACF98AA1CC2E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Disque.Raytracer</RootNamespace>
+    <AssemblyName>Disque.Raytracer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acceleration\SimpleBHVTree.cs" />
+    <Compile Include="BRDFs\BRDF.cs" />
+    <Compile Include="BRDFs\SV_GlossySpecular.cs" />
+    <Compile Include="BRDFs\FresnelReflector.cs" />
+    <Compile Include="BRDFs\GlossySpecular.cs" />
+    <Compile Include="BRDFs\Lambertian.cs" />
+    <Compile Include="BRDFs\PerfectSpecular.cs" />
+    <Compile Include="BRDFs\SV_Lambertian.cs" />
+    <Compile Include="BRDFs\SV_PerfectSpecular.cs" />
+    <Compile Include="BTDFs\BTDF.cs" />
+    <Compile Include="BTDFs\FresnelTransmitter.cs" />
+    <Compile Include="BTDFs\PerfectTransmitter.cs" />
+    <Compile Include="Cameras\Camera.cs" />
+    <Compile Include="Cameras\Pinhole.cs" />
+    <Compile Include="Cameras\Fisheye.cs" />
+    <Compile Include="Cameras\Orthographic.cs" />
+    <Compile Include="Cameras\Spherical.cs" />
+    <Compile Include="Cameras\Stereo.cs" />
+    <Compile Include="Cameras\ThinLens.cs" />
+    <Compile Include="GeometricObjects\CompoundObjects\Compound.cs" />
+    <Compile Include="GeometricObjects\CompoundObjects\Grid.cs" />
+    <Compile Include="GeometricObjects\CompoundObjects\Group.cs" />
+    <Compile Include="GeometricObjects\CompoundObjects\SolidCone.cs" />
+    <Compile Include="GeometricObjects\CompoundObjects\SolidCylinder.cs" />
+    <Compile Include="GeometricObjects\CompoundObjects\ThickAnnulus.cs" />
+    <Compile Include="GeometricObjects\GeometricObject.cs" />
+    <Compile Include="GeometricObjects\Instance.cs" />
+    <Compile Include="GeometricObjects\Meshes\SmoothHeightMap.cs" />
+    <Compile Include="GeometricObjects\Meshes\HeightMap.cs" />
+    <Compile Include="GeometricObjects\PartObjects\ConvexPartSphere.cs" />
+    <Compile Include="GeometricObjects\PartObjects\ConvexPartTorus.cs" />
+    <Compile Include="GeometricObjects\PartObjects\CutCube.cs" />
+    <Compile Include="GeometricObjects\PartObjects\CutFace.cs" />
+    <Compile Include="GeometricObjects\PartObjects\OpenPartCylinder.cs" />
+    <Compile Include="GeometricObjects\PartObjects\PartAnnulus.cs" />
+    <Compile Include="GeometricObjects\Primitives\Annulus.cs" />
+    <Compile Include="GeometricObjects\Primitives\Box.cs" />
+    <Compile Include="GeometricObjects\Primitives\ConcaveHemisphere.cs" />
+    <Compile Include="GeometricObjects\Primitives\ConcaveSphere.cs" />
+    <Compile Include="GeometricObjects\Primitives\ConvexOpenCylinder.cs" />
+    <Compile Include="GeometricObjects\Primitives\Disk.cs" />
+    <Compile Include="GeometricObjects\Primitives\OpenCone.cs" />
+    <Compile Include="GeometricObjects\Primitives\OpenCylinder.cs" />
+    <Compile Include="GeometricObjects\Primitives\Paraboloid.cs" />
+    <Compile Include="GeometricObjects\Primitives\Plane.cs" />
+    <Compile Include="GeometricObjects\Primitives\Quadratic.cs" />
+    <Compile Include="GeometricObjects\Primitives\Rectangle.cs" />
+    <Compile Include="GeometricObjects\Primitives\SmoothTriangle.cs" />
+    <Compile Include="GeometricObjects\Primitives\Sphere.cs" />
+    <Compile Include="GeometricObjects\Primitives\Torus.cs" />
+    <Compile Include="GeometricObjects\Primitives\Triangle.cs" />
+    <Compile Include="GeometricObjects\Triangles\FlatMeshTriangle.cs" />
+    <Compile Include="GeometricObjects\Triangles\FlatUVMeshTriangle.cs" />
+    <Compile Include="GeometricObjects\Triangles\HeightMap.cs" />
+    <Compile Include="GeometricObjects\Triangles\Mesh.cs" />
+    <Compile Include="GeometricObjects\Triangles\MeshTriangle.cs" />
+    <Compile Include="GeometricObjects\Triangles\SmoothMeshTriangle.cs" />
+    <Compile Include="GeometricObjects\Triangles\SmoothUVMeshTriangle.cs" />
+    <Compile Include="Lights\Ambient.cs" />
+    <Compile Include="Lights\AmbientOccluder.cs" />
+    <Compile Include="Lights\AreaLight.cs" />
+    <Compile Include="Lights\Directional.cs" />
+    <Compile Include="Lights\EnvironmentLight.cs" />
+    <Compile Include="Lights\FakeSphericalLight.cs" />
+    <Compile Include="Lights\JitteredDirectional.cs" />
+    <Compile Include="Lights\Light.cs" />
+    <Compile Include="Lights\PointLight.cs" />
+    <Compile Include="Mappings\CylindericalMap.cs" />
+    <Compile Include="Mappings\HemisphericalMap.cs" />
+    <Compile Include="Mappings\LightProbeMap.cs" />
+    <Compile Include="Mappings\Mapping.cs" />
+    <Compile Include="Mappings\RectangularMap.cs" />
+    <Compile Include="Mappings\SphericalMap.cs" />
+    <Compile Include="Materials\SV_Emissive.cs" />
+    <Compile Include="Materials\SV_GlossyReflector.cs" />
+    <Compile Include="Materials\SV_Matte.cs" />
+    <Compile Include="Materials\Dielectric.cs" />
+    <Compile Include="Materials\Emissive.cs" />
+    <Compile Include="Materials\GlossyReflective.cs" />
+    <Compile Include="Materials\Material.cs" />
+    <Compile Include="Materials\Matte.cs" />
+    <Compile Include="Materials\Phong.cs" />
+    <Compile Include="Materials\Plastic.cs" />
+    <Compile Include="Materials\Reflective.cs" />
+    <Compile Include="Materials\SV_Phong.cs" />
+    <Compile Include="Materials\SV_Reflector.cs" />
+    <Compile Include="Materials\SV_Transparent.cs" />
+    <Compile Include="Materials\Transparent.cs" />
+    <Compile Include="MathHelper.cs" />
+    <None Include="MainClassDiagram.cd" />
+    <None Include="Math\Matrix.cs" />
+    <Compile Include="Math\BBox.cs" />
+    <Compile Include="Math\Colors.cs" />
+    <Compile Include="Math\OBJReader.cs" />
+    <Compile Include="Math\Photon.cs" />
+    <Compile Include="Math\PhotonMap.cs" />
+    <Compile Include="Math\PlyReader.cs" />
+    <Compile Include="Math\ShadeRec.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rml\Element.cs" />
+    <Compile Include="Rml\Parameter.cs" />
+    <Compile Include="Rml\ParametersCollection.cs" />
+    <Compile Include="Rml\Parser.cs" />
+    <Compile Include="Samplers\Hammersley.cs" />
+    <Compile Include="Samplers\Jittered.cs" />
+    <Compile Include="Samplers\MultiJittered.cs" />
+    <Compile Include="Samplers\NRooks.cs" />
+    <Compile Include="Samplers\PureRandom.cs" />
+    <Compile Include="Samplers\Regular.cs" />
+    <Compile Include="Samplers\Sampler.cs" />
+    <Compile Include="Textures\Checker3D.cs" />
+    <Compile Include="Textures\ConeChecker.cs" />
+    <Compile Include="Textures\ConstantColor.cs" />
+    <Compile Include="Textures\CylinderChecker.cs" />
+    <Compile Include="Textures\DiskChecker.cs" />
+    <Compile Include="Textures\Image.cs" />
+    <Compile Include="Textures\ImageTexture.cs" />
+    <Compile Include="Textures\NoiseBased\CubicNoise.cs" />
+    <Compile Include="Textures\NoiseBased\LatticeNoise.cs" />
+    <Compile Include="Textures\NoiseBased\LinearNoise.cs" />
+    <Compile Include="Textures\NoiseBased\Wood.cs" />
+    <Compile Include="Textures\PlaneChecker.cs" />
+    <Compile Include="Textures\RectangleChecker.cs" />
+    <Compile Include="Textures\SphereTextures.cs" />
+    <Compile Include="Textures\Texture.cs" />
+    <Compile Include="Textures\TextureInstance.cs" />
+    <Compile Include="Tracers\AreaLighting.cs" />
+    <Compile Include="Tracers\GlobalTrace.cs" />
+    <Compile Include="Tracers\MultipleObjects.cs" />
+    <Compile Include="Tracers\PathTrace.cs" />
+    <Compile Include="Tracers\PhotonTracer.cs" />
+    <Compile Include="Tracers\RayCast.cs" />
+    <Compile Include="Tracers\Tracer.cs" />
+    <Compile Include="Tracers\Whitted.cs" />
+    <Compile Include="Worlds\PixelScreen.cs" />
+    <Compile Include="Worlds\ViewPlane.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Worlds\World.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\MathLibrary\MathLibrary\MathLibrary.csproj">
+      <Project>{EC75A39A-B913-4570-BEA2-5A07D2738B25}</Project>
+      <Name>MathLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Disque.Raytracer.Acceleration.SimpleBVHTree" Collapsed="true">
+    <Position X="2.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAKAAgAgBEAAAACAEAAAAAAAAII=</HashCode>
+      <FileName>Acceleration\SimpleBHVTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Acceleration.SortByBoundingBox" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="56.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Acceleration\SimpleBHVTree.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Disque.Raytracer.BRDFs.BRDF" Collapsed="true">
+    <Position X="6" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAgAAEQAAAAA=</HashCode>
+      <FileName>BRDFs\BRDF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.BRDFs.FresnelReflector" Collapsed="true">
+    <Position X="0.5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgIAAAAAAAgAAggAAAAA=</HashCode>
+      <FileName>BRDFs\FresnelReflector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.BRDFs.GlossySpecular" Collapsed="true">
+    <Position X="2.75" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAACAEgAAExAAAAA=</HashCode>
+      <FileName>BRDFs\GlossySpecular.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.BRDFs.Lambertian" Collapsed="true">
+    <Position X="5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAgAAkBAAAAA=</HashCode>
+      <FileName>BRDFs\Lambertian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.BRDFs.PerfectSpecular" Collapsed="true">
+    <Position X="7.25" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAgAAkBAAAAA=</HashCode>
+      <FileName>BRDFs\PerfectSpecular.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.BRDFs.SV_GlossySpecular" Collapsed="true">
+    <Position X="9.5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAQAAAAAAAAAAEgAAExAAAAA=</HashCode>
+      <FileName>BRDFs\SV_GlossySpecular.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.BRDFs.SV_Lambertian" Collapsed="true">
+    <Position X="11.75" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAgIAEBAAAAA=</HashCode>
+      <FileName>BRDFs\SV_Lambertian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.BTDFs.BTDF" Collapsed="true">
+    <Position X="16.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAgAAEAAAAAA=</HashCode>
+      <FileName>BTDFs\BTDF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.BTDFs.FresnelTransmitter" Collapsed="true">
+    <Position X="15" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgIAAAAAAAgAAAgAACAA=</HashCode>
+      <FileName>BTDFs\FresnelTransmitter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.BTDFs.PerfectTransmitter" Collapsed="true">
+    <Position X="17.25" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAgAAAAAAAAAAAAAQAAAAAAAAAAAgAAEAAACAA=</HashCode>
+      <FileName>BTDFs\PerfectTransmitter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Cameras.Camera" Collapsed="true">
+    <Position X="7.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAgAAAAABAAgAAAAACAAAAAAAAAAAAAAAABaAAI=</HashCode>
+      <FileName>Cameras\Camera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Cameras.Fisheye" Collapsed="true">
+    <Position X="0.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Cameras\Fisheye.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Cameras.Orthographic" Collapsed="true">
+    <Position X="2.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cameras\Orthographic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Cameras.Pinhole" Collapsed="true">
+    <Position X="5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAIBAAAEAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Cameras\Pinhole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Cameras.Spherical" Collapsed="true">
+    <Position X="7.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAACAAAAAAAAAAAAAAAAAAEAAgAAAAAAA=</HashCode>
+      <FileName>Cameras\Spherical.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Cameras.Stereo" Collapsed="true">
+    <Position X="9.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAgAAAAAAAAAAAAAAAAAAAQAAAAAAAABiACAAAA=</HashCode>
+      <FileName>Cameras\Stereo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Cameras.ThinLens" Collapsed="true">
+    <Position X="11.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAgAAAAABEAAEAAAAAAAAAAAAABQEAAAAQAAAAA=</HashCode>
+      <FileName>Cameras\ThinLens.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Cameras.ThreadedPinhole" Collapsed="true">
+    <Position X="14" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAIBAAAEAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Cameras\ThreadedPinhole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.CompoundObjects.Compound" Collapsed="true">
+    <Position X="9.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAIAAAAABAAAgAEEAAAAAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\CompoundObjects\Compound.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.CompoundObjects.Grid" Collapsed="true">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABBAAAAAAAAAQAABAIAAAAiAAAAgACASAAAAAAAABA=</HashCode>
+      <FileName>GeometricObjects\CompoundObjects\Grid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.CompoundObjects.Group" Collapsed="true">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAIAAAAgBAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\CompoundObjects\Group.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.CompoundObjects.SolidCone" Collapsed="true">
+    <Position X="11.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAIAAAAgAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\CompoundObjects\SolidCone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.CompoundObjects.SolidCylinder" Collapsed="true">
+    <Position X="13.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAIAAAAgAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\CompoundObjects\SolidCylinder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.CompoundObjects.ThickAnnulus" Collapsed="true">
+    <Position X="16" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\CompoundObjects\ThickAnnulus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.GeometricObject" Collapsed="true">
+    <Position X="28.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAEAAAABAIAAAAAIABAZgAAIEgAEEAAAgAABQABA=</HashCode>
+      <FileName>GeometricObjects\GeometricObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Instance" Collapsed="true">
+    <Position X="38.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAWEAgAAAAAAAgDAIAAAIgEAAAgAAEgAAEAAAAARA=</HashCode>
+      <FileName>GeometricObjects\Instance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Meshes.HeightMap" Collapsed="true">
+    <Position X="43" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEEAAAAABAAQAAAIAQkAAAAAAkAAEQggAAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\Meshes\HeightMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.PartObjects.CutFace" Collapsed="true">
+    <Position X="47.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAIIAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\PartObjects\CutFace.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Primitives.Annulus" Collapsed="true">
+    <Position X="52" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACgAAgAAAAAAAAAABAIAAAgAAAAAoAAAAAAAAAoAAAA=</HashCode>
+      <FileName>GeometricObjects\Primitives\Annulus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Primitives.Box" Collapsed="true">
+    <Position X="18.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAEAIAAAAgAAIAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\Primitives\Box.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Primitives.ConvexOpenCylinder" Collapsed="true">
+    <Position X="20.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAIAAAAAAAAggAAAAQAQAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\Primitives\ConvexOpenCylinder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Primitives.Disk" Collapsed="true">
+    <Position X="22.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAEAAAABAAAAAAAIAAABAABIIgAAAADoAAQAIAAE=</HashCode>
+      <FileName>GeometricObjects\Primitives\Disk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Primitives.OpenCone" Collapsed="true">
+    <Position X="29.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAgAAAQAABAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\Primitives\OpenCone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Primitives.OpenCylinder" Collapsed="true">
+    <Position X="31.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAIAAAAAAAAggAAAAQAQAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\Primitives\OpenCylinder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Primitives.Plane" Collapsed="true">
+    <Position X="34" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAIAAIgAAAAAAAAAAIAAA=</HashCode>
+      <FileName>GeometricObjects\Primitives\Plane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Primitives.Rectangle" Collapsed="true">
+    <Position X="36.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAADAAAAAAAIAAAhAAFIAgAAgASQAAQAAAAE=</HashCode>
+      <FileName>GeometricObjects\Primitives\Rectangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Primitives.SmoothTriangle" Collapsed="true">
+    <Position X="40.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAgAgEBQEgAAAAAICAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\Primitives\SmoothTriangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Primitives.Sphere" Collapsed="true">
+    <Position X="45.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAABAIAAAIgIAAAgAAAAAAAAAAIAAA=</HashCode>
+      <FileName>GeometricObjects\Primitives\Sphere.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Primitives.Torus" Collapsed="true">
+    <Position X="49.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAABAIAAIAAAABAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\Primitives\Torus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Primitives.Triangle" Collapsed="true">
+    <Position X="54.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAgABQIoAAAAAIAAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\Primitives\Triangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Triangles.FlatMeshTriangle" Collapsed="true">
+    <Position X="25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\Triangles\FlatMeshTriangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Triangles.Mesh" Collapsed="true">
+    <Position X="7" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\Triangles\Mesh.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Triangles.MeshTriangle" Collapsed="true">
+    <Position X="26" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAIAgAAIIgAAAAQEAAQAAAAA=</HashCode>
+      <FileName>GeometricObjects\Triangles\MeshTriangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.GeometricObjects.Triangles.SmoothMeshTriangle" Collapsed="true">
+    <Position X="27.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\Triangles\SmoothMeshTriangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Lights.Ambient" Collapsed="true">
+    <Position X="2.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAYAAAAAAAAAAAAAAAAAAAAAAAAgAQAABA=</HashCode>
+      <FileName>Lights\Ambient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Lights.AmbientOccluder" Collapsed="true">
+    <Position X="5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAYAAAAAAAAAAAAABAAAAACAAAAgQQaABA=</HashCode>
+      <FileName>Lights\AmbientOccluder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Lights.AreaLight" Collapsed="true">
+    <Position X="7.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAABYQAAgAAAAAAAAAAAAAAFAAAAACAQAABA=</HashCode>
+      <FileName>Lights\AreaLight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Lights.Directional" Collapsed="true">
+    <Position X="9.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAYAAAAACAAAAAAAAAAAAAAAAAAgAQAABA=</HashCode>
+      <FileName>Lights\Directional.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Lights.EnvironmentLight" Collapsed="true">
+    <Position X="11.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAABYQAAAAAAAAAAAABAAAAAAABoAAQQAABA=</HashCode>
+      <FileName>Lights\EnvironmentLight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Lights.FakeSphericalLight" Collapsed="true">
+    <Position X="14" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAYAAAAAAIAAAAAAAAAAgAAAAAAgAQEABA=</HashCode>
+      <FileName>Lights\FakeSphericalLight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Lights.Light" Collapsed="true">
+    <Position X="7.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABYAAAAAAAAAAAAAAAAAAAAAAAgCAQAABA=</HashCode>
+      <FileName>Lights\Light.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Lights.PointLight" Collapsed="true">
+    <Position X="0.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAYAAAgAAAAAAAAAAAAAAAAAAAAgAQAABA=</HashCode>
+      <FileName>Lights\PointLight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Mappings.CylindericalMap" Collapsed="true">
+    <Position X="17.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\CylindericalMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Mappings.HemisphericalMap" Collapsed="true">
+    <Position X="19.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\HemisphericalMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Mappings.LightProbeMap" Collapsed="true">
+    <Position X="21.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Mappings\LightProbeMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Mappings.Mapping" Collapsed="true">
+    <Position X="21.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\Mapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Mappings.RectangularMap" Collapsed="true">
+    <Position X="24" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\RectangularMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Mappings.SphericalMap" Collapsed="true">
+    <Position X="26.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\SphericalMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Materials.Dielectric" Collapsed="true">
+    <Position X="16.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAADAAAIAAAAAAAAAAAABAEAAAEBAAAAAAAAAEA=</HashCode>
+      <FileName>Materials\Dielectric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Materials.Emissive" Collapsed="true">
+    <Position X="18.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAgACAEBAgIAAAAA=</HashCode>
+      <FileName>Materials\Emissive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Materials.GlossyReflective" Collapsed="true">
+    <Position X="7.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAAAAAAAAAAAAAAAAAAAAACAgAAAAAAAAABAAwAAABA=</HashCode>
+      <FileName>Materials\GlossyReflective.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Materials.Material" Collapsed="true">
+    <Position X="9.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAEBgAYAgAAA=</HashCode>
+      <FileName>Materials\Material.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Materials.Matte" Collapsed="true">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAICAAAAAAAAAAAAAAAAAAIAAAAAAAACAEBAAYQAAAA=</HashCode>
+      <FileName>Materials\Matte.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Materials.Phong" Collapsed="true">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAIAgAAQAAAAAAAAAAAAAAIIAAAAAAAAAABAAQBCAAA=</HashCode>
+      <FileName>Materials\Phong.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Materials.Plastic" Collapsed="true">
+    <Position X="9.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Materials\Plastic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Materials.Reflective" Collapsed="true">
+    <Position X="3" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAEAAAAAAAAAAAAAAAAAAABAAAAQAEBAAIAAAAA=</HashCode>
+      <FileName>Materials\Reflective.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Materials.SV_Matte" Collapsed="true">
+    <Position X="12" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAICAAAAAAAAAAAAAAAAAAIAAAAAAAAAAEBAAIQAAAA=</HashCode>
+      <FileName>Materials\SV_Matte.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Materials.SV_Phong" Collapsed="true">
+    <Position X="14.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAIAgAAQAAAAAAAAAAAAAAIIAAAAAAAAAABAAABCAAA=</HashCode>
+      <FileName>Materials\SV_Phong.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Materials.Transparent" Collapsed="true">
+    <Position X="5.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAEAAgAAAAAAAAAAAAAAAABAAAQAAEBAAAAAAAA=</HashCode>
+      <FileName>Materials\Transparent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Math.Colors" Collapsed="true">
+    <Position X="56.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAAAAAAgAAAAAABAAABAAAAAAAAAAAADAAAAE=</HashCode>
+      <FileName>Math\Colors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Math.PlyReader" Collapsed="true">
+    <Position X="58.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Math\PlyReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Math.ShadeRec" Collapsed="true">
+    <Position X="60.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAABAACAAAAAAABAIAAAAIBAAgAAAAgAAWAAA=</HashCode>
+      <FileName>Math\ShadeRec.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.MathHelper" Collapsed="true">
+    <Position X="60.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAICHCAJAhAkACoAkAAEAAIBQhWRAAgAoCgBAACAACA=</HashCode>
+      <FileName>MathHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Samplers.Hammersley" Collapsed="true">
+    <Position X="15.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Samplers\Hammersley.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Samplers.Jittered" Collapsed="true">
+    <Position X="17.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Samplers\Jittered.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Samplers.MultiJittered" Collapsed="true">
+    <Position X="20" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAYCAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Samplers\MultiJittered.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Samplers.NRooks" Collapsed="true">
+    <Position X="22.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Samplers\NRooks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Samplers.PureRandom" Collapsed="true">
+    <Position X="24.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Samplers\PureRandom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Samplers.Regular" Collapsed="true">
+    <Position X="26.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Samplers\Regular.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Samplers.Sampler" Collapsed="true">
+    <Position X="21" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAyCEAAQhAgCAAZCBAAABAAQACAgEACAAIAAAAAAAEA=</HashCode>
+      <FileName>Samplers\Sampler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Textures.ConstantColor" Collapsed="true">
+    <Position X="21.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
+      <FileName>Textures\ConstantColor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Textures.Image" Collapsed="true">
+    <Position X="58.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACABAACAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Textures\Image.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Textures.ImageTexture" Collapsed="true">
+    <Position X="17.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAEAAAAAAAAQAAAAEAEAAAAACAAAAAAAAAAgA=</HashCode>
+      <FileName>Textures\ImageTexture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Textures.RectangleChecker" Collapsed="true">
+    <Position X="19.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAEAgEAAAADhBQgAAAAAAAQ=</HashCode>
+      <FileName>Textures\RectangleChecker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Textures.Texture" Collapsed="true">
+    <Position X="19.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Textures\Texture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Tracers.AreaLighting" Collapsed="true">
+    <Position X="0.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Tracers\AreaLighting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Tracers.GlobalTrace" Collapsed="true">
+    <Position X="2.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Tracers\GlobalTrace.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Tracers.MultipleObjects" Collapsed="true">
+    <Position X="5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Tracers\MultipleObjects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Tracers.PathTrace" Collapsed="true">
+    <Position X="7.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Tracers\PathTrace.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Tracers.RayCast" Collapsed="true">
+    <Position X="9.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Tracers\RayCast.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Tracers.Tracer" Collapsed="true">
+    <Position X="6" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Tracers\Tracer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Tracers.Whitted" Collapsed="true">
+    <Position X="11.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Tracers\Whitted.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Worlds.PixelScreen" Collapsed="true">
+    <Position X="56.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAIAAAECAAAAA=</HashCode>
+      <FileName>Worlds\PixelScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Worlds.ViewPlane" Collapsed="true">
+    <Position X="58.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACgAACCAADAAEAAQAAAAAwCBAAA=</HashCode>
+      <FileName>Worlds\ViewPlane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disque.Raytracer.Worlds.World" Collapsed="true">
+    <Position X="60.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAgIAIAAAAAABAgABgAAAAAAABEAAAAgAAAAAAA=</HashCode>
+      <FileName>Worlds\World.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Disque.Raytracer.Math.BBox" Collapsed="true">
+    <Position X="56.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAABAAAAgAEAIAAAAAAAAAAAAAAAABAQAAAiA=</HashCode>
+      <FileName>Math\BBox.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Disque.Raytracer.Worlds.Pixel" Collapsed="true">
+    <Position X="58.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAYAA=</HashCode>
+      <FileName>Worlds\PixelScreen.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="Disque.Raytracer.Acceleration.GroupingMethod" Collapsed="true">
+    <Position X="56.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Acceleration\SimpleBHVTree.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Disque.Raytracer.Cameras.ViewType" Collapsed="true">
+    <Position X="60.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Cameras\Stereo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Disque.Raytracer.Mappings.MapType" Collapsed="true">
+    <Position X="58.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Mappings\LightProbeMap.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
