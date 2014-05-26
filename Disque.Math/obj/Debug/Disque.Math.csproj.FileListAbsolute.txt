@@ -1,0 +1,5 @@
+E:\Visual Studio Projects\DisqueEngine\Disque.Math\obj\Debug\ResolveAssemblyReference.cache
+E:\Visual Studio Projects\DisqueEngine\Disque.Math\bin\Debug\Disque.Math.dll
+E:\Visual Studio Projects\DisqueEngine\Disque.Math\bin\Debug\Disque.Math.pdb
+E:\Visual Studio Projects\DisqueEngine\Disque.Math\obj\Debug\Disque.Math.dll
+E:\Visual Studio Projects\DisqueEngine\Disque.Math\obj\Debug\Disque.Math.pdb
